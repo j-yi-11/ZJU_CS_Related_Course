@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 20 11:23:37 2023
+# Process ID: 20008
+# Current directory: E:/-riscv-/vivado2020/OExp06-Cache/cache/cache.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/-riscv-/vivado2020/OExp06-Cache/cache/cache.sim/sim_1/behav/xsim/xsim.dir/cache_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/-riscv-/vivado2020/OExp06-Cache/cache/cache.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/-riscv-/vivado2020/OExp06-Cache/cache/cache.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/-riscv-/vivado2020/OExp06-Cache/cache/cache.sim/sim_1/behav/xsim/xsim.dir/cache_tb_behav/webtalk/xsim_webtalk.tcl -notrace

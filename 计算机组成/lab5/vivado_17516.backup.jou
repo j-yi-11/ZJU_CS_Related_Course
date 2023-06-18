@@ -1,0 +1,129 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 18 16:10:15 2023
+# Process ID: 17516
+# Current directory: C:/Users/jiangyi/Desktop/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9052 C:\Users\jiangyi\Desktop\lab5\lab5.xpr
+# Log file: C:/Users/jiangyi/Desktop/lab5/vivado.log
+# Journal file: C:/Users/jiangyi/Desktop/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jiangyi/Desktop/lab5/lab5.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+set_property -dict [list CONFIG.depth {1024}] [get_ips ROM]
+generate_target all [get_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/ip/ROM/ROM.xci]
+export_ip_user_files -of_objects [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/ip/ROM/ROM.xci] -directory C:/Users/jiangyi/Desktop/lab5/lab5.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jiangyi/Desktop/lab5/lab5.ip_user_files -ipstatic_source_dir C:/Users/jiangyi/Desktop/lab5/lab5.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/jiangyi/Desktop/lab5/lab5.cache/compile_simlib/modelsim} {questa=C:/Users/jiangyi/Desktop/lab5/lab5.cache/compile_simlib/questa} {riviera=C:/Users/jiangyi/Desktop/lab5/lab5.cache/compile_simlib/riviera} {activehdl=C:/Users/jiangyi/Desktop/lab5/lab5.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_IF.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_IF.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/IF_reg_ID.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/IF_reg_ID.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_ID.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_ID.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/ID_reg_Ex.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/ID_reg_Ex.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_Ex.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_Ex.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Ex_reg_Mem.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Ex_reg_Mem.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_Mem.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_Mem.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Mem_reg_WB.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Mem_reg_WB.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_WB.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/new/Pipeline_WB.v
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_Mem.edf C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/IF_reg_ID.edf C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_WB.edf C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Ex_reg_Mem.edf C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/ID_reg_Ex.edf C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_IF.edf C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Mem_reg_WB.edf C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_ID.edf C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_Ex.edf}
+add_files -norecurse {C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_WB.v C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Mem_reg_WB.v C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/IF_reg_ID.v C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_IF.v C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_Ex.v C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_ID.v C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Ex_reg_Mem.v C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/Pipeline_Mem.v C:/Users/jiangyi/Desktop/lab5/OExp05-Pipeline_CPU/ID_reg_Ex.v}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw_manager
+set_property -dict [list CONFIG.depth {2048}] [get_ips ROM]
+generate_target all [get_files  C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/ip/ROM/ROM.xci]
+export_ip_user_files -of_objects [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/ip/ROM/ROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/jiangyi/Desktop/lab5/lab5.srcs/sources_1/ip/ROM/ROM.xci] -directory C:/Users/jiangyi/Desktop/lab5/lab5.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jiangyi/Desktop/lab5/lab5.ip_user_files -ipstatic_source_dir C:/Users/jiangyi/Desktop/lab5/lab5.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/jiangyi/Desktop/lab5/lab5.cache/compile_simlib/modelsim} {questa=C:/Users/jiangyi/Desktop/lab5/lab5.cache/compile_simlib/questa} {riviera=C:/Users/jiangyi/Desktop/lab5/lab5.cache/compile_simlib/riviera} {activehdl=C:/Users/jiangyi/Desktop/lab5/lab5.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab5/lab5.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw_manager

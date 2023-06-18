@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May  4 16:05:17 2023
+# Process ID: 2720
+# Current directory: C:/Users/jiangyi/Desktop/lab4-3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17432 C:\Users\jiangyi\Desktop\lab4-3\lab4-3.xpr
+# Log file: C:/Users/jiangyi/Desktop/lab4-3/vivado.log
+# Journal file: C:/Users/jiangyi/Desktop/lab4-3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jiangyi/Desktop/lab4-3/lab4-3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/lab4-3/Supplementary'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 1191.594 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Thu May  4 16:06:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 16:08:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 16:09:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7k160tiffg676-2L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1191.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1027 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.464 . Memory (MB): peak = 1758.121 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.464 . Memory (MB): peak = 1758.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1758.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 192 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 64 instances
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 1941.246 ; gain = 749.652
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2092.613 ; gain = 0.000
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/201706300081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3655.973 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+add_files -norecurse {C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/vga_debugger.mem C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/font_8x16.mem}
+WARNING: [filemgmt 56-12] File 'C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/vga_debugger.mem' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/font_8x16.mem' cannot be added to the project because it already exists in the project, skipping this file
+add_files -norecurse {C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/VGA.v C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDebugger.v C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDisplay.v C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/VgaController.v C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/Hex2Ascii.v}
+WARNING: [filemgmt 56-12] File 'C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/VGA.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDebugger.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDisplay.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/VgaController.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/jiangyi/Desktop/lab4-3/Supplementary/VGA/VGA.srcs/sources_1/new/Hex2Ascii.v' cannot be added to the project because it already exists in the project, skipping this file
+close_design
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab4-3/Supplementary/RAM_B.edf] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab4-3/Supplementary/RAM_B.edf
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab4-3/Supplementary/RAM_B.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab4-3/Supplementary/RAM_B.v
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jiangyi/Desktop/lab4-3/D_mem.coe' provided. It will be converted relative to IP Instance files '../../../../D_mem.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jiangyi/Desktop/lab4-3/D_mem.coe' provided. It will be converted relative to IP Instance files '../../../../D_mem.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name RAM_B
+set_property -dict [list CONFIG.Component_Name {RAM_B} CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {32} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/jiangyi/Desktop/lab4-3/D_mem.coe}] [get_ips RAM_B]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'RAM_B' to 'RAM_B' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jiangyi/Desktop/lab4-3/D_mem.coe' provided. It will be converted relative to IP Instance files '../../../../D_mem.coe'
+generate_target {instantiation_template} [get_files c:/Users/jiangyi/Desktop/lab4-3/lab4-3.srcs/sources_1/ip/RAM_B/RAM_B.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'RAM_B'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/Users/jiangyi/Desktop/lab4-3/lab4-3.srcs/sources_1/ip/RAM_B/RAM_B.xci]
+generate_target all [get_files  c:/Users/jiangyi/Desktop/lab4-3/lab4-3.srcs/sources_1/ip/RAM_B/RAM_B.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'RAM_B'...
+export_ip_user_files -of_objects [get_files c:/Users/jiangyi/Desktop/lab4-3/lab4-3.srcs/sources_1/ip/RAM_B/RAM_B.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/jiangyi/Desktop/lab4-3/lab4-3.srcs/sources_1/ip/RAM_B/RAM_B.xci] -directory C:/Users/jiangyi/Desktop/lab4-3/lab4-3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jiangyi/Desktop/lab4-3/lab4-3.ip_user_files -ipstatic_source_dir C:/Users/jiangyi/Desktop/lab4-3/lab4-3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/jiangyi/Desktop/lab4-3/lab4-3.cache/compile_simlib/modelsim} {questa=C:/Users/jiangyi/Desktop/lab4-3/lab4-3.cache/compile_simlib/questa} {riviera=C:/Users/jiangyi/Desktop/lab4-3/lab4-3.cache/compile_simlib/riviera} {activehdl=C:/Users/jiangyi/Desktop/lab4-3/lab4-3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  4 16:34:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 16:36:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 16:38:03 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3693.402 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3693.402 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  4 16:49:23 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 16:52:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 16:53:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3693.402 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3693.402 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 17:19:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/synth_1/runme.log
+[Thu May  4 17:19:53 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 3693.402 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4-3/lab4-3.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3693.402 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  4 18:06:17 2023...

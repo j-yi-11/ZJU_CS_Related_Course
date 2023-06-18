@@ -1,0 +1,5 @@
+xpm_memory.sv,systemverilog,xpm,D:/vivado_xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,D:/vivado_xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,
+dist_mem_gen_v8_0.v,verilog,dist_mem_gen_v8_0_13,../../../ipstatic/simulation/dist_mem_gen_v8_0.v,
+ROM_D.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/ROM_D/sim/ROM_D.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

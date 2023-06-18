@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jiangyi/Desktop/LAB1/seq_moore/seq_moore.srcs/sources_1/new/seq_moore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seq_moore
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jiangyi/Desktop/LAB1/seq_moore/seq_moore.srcs/sim_1/new/seq_moore_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seq_moore_tb
+INFO: [VRFC 10-311] analyzing module seq_moore_tb
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seq_moore_tb' [C:/Users/jiangyi/Desktop/LAB1/seq_moore/seq_moore.srcs/sim_1/new/seq_moore_tb.v:29]

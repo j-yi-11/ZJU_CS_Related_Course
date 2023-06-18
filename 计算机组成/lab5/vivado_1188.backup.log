@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 25 20:07:20 2023
+# Process ID: 1188
+# Current directory: C:/Users/jiangyi/Desktop/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1056 C:\Users\jiangyi\Desktop\lab5\lab5.xpr
+# Log file: C:/Users/jiangyi/Desktop/lab5/vivado.log
+# Journal file: C:/Users/jiangyi/Desktop/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jiangyi/Desktop/lab5/lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 25 21:24:10 2023...

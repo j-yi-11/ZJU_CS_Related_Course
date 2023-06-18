@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar  9 16:40:51 2023
+# Process ID: 12156
+# Current directory: C:/Users/jiangyi/Desktop/LAB1/Regs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4480 C:\Users\jiangyi\Desktop\LAB1\Regs\Regs.xpr
+# Log file: C:/Users/jiangyi/Desktop/LAB1/Regs/vivado.log
+# Journal file: C:/Users/jiangyi/Desktop/LAB1/Regs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jiangyi/Desktop/LAB1/Regs/Regs.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source regs_tb.tcl
+close_sim

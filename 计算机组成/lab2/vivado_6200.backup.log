@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 30 09:12:21 2023
+# Process ID: 6200
+# Current directory: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17144 C:\Users\jiangyi\Desktop\Lab02 CPU Environment Building\OExp02-IP2SOC\OExp02-IP2SOC.xpr
+# Log file: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/vivado.log
+# Journal file: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/OExp02-IP2SOC.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:10 . Memory (MB): peak = 1187.559 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'.
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'. The path is contained within another repository.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'. The path is contained within another repository.
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'. The path is contained within another repository.
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'. The path is contained within another repository.
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP'.
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP'.
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 11:30:08 2023...

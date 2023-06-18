@@ -1,0 +1,7 @@
+Running: xsim.dir/SignalExt_32_tb_behav/xsimk.exe -simmode gui -wdb SignalExt_32_tb_behav.wdb -simrunnum 0 -socket 51601
+Design successfully loaded
+Design Loading Memory Usage: 6496 KB (Peak: 6496 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7052 KB (Peak: 7052 KB)
+Simulation CPU Usage: 62 ms

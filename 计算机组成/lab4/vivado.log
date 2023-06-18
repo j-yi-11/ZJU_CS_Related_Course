@@ -1,0 +1,344 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 27 16:10:03 2023
+# Process ID: 15580
+# Current directory: C:/Users/jiangyi/Desktop/lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5264 C:\Users\jiangyi\Desktop\lab4\lab4.xpr
+# Log file: C:/Users/jiangyi/Desktop/lab4/vivado.log
+# Journal file: C:/Users/jiangyi/Desktop/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jiangyi/Desktop/lab4/lab4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/lab4/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 1191.980 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Apr 27 16:10:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Apr 27 16:11:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7k160tiffg676-2L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1191.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 960 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.415 . Memory (MB): peak = 1793.344 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.415 . Memory (MB): peak = 1793.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1793.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 128 instances
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1933.066 ; gain = 741.086
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 27 16:13:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2040.383 ; gain = 3.523
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3599.996 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+add_files -norecurse {C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDisplay.v C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDebugger.v C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA/VGA.srcs/sources_1/new/Hex2Ascii.v C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VGA.v C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaController.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA.v] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA.v
+export_ip_user_files -of_objects  [get_files C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA.edf] -no_script -reset -force -quiet
+remove_files  C:/Users/jiangyi/Desktop/lab4/IP/Supplementary/VGA.edf
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 27 16:36:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/synth_1/runme.log
+[Thu Apr 27 16:36:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3641.551 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3655.852 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 27 16:43:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3655.852 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3659.215 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 3679.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 851 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.367 . Memory (MB): peak = 3679.402 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.367 . Memory (MB): peak = 3679.402 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3702.543 ; gain = 43.309
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 27 16:46:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3851.742 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3852.070 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property -dict [list CONFIG.coefficient_file {C:/Users/jiangyi/Desktop/lab4/I_mem.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jiangyi/Desktop/lab4/I_mem.coe' provided. It will be converted relative to IP Instance files '../../../../I_mem.coe'
+set_property -dict [list CONFIG.coefficient_file {C:/Users/jiangyi/Desktop/lab4/I_mem.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jiangyi/Desktop/lab4/I_mem.coe' provided. It will be converted relative to IP Instance files '../../../../I_mem.coe'
+generate_target all [get_files  C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_D'...
+export_ip_user_files -of_objects [get_files C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files -ipstatic_source_dir C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/modelsim} {questa=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/questa} {riviera=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/riviera} {activehdl=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 27 16:55:40 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/synth_1/runme.log
+[Thu Apr 27 16:55:40 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3853.918 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 27 17:03:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3853.918 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property -dict [list CONFIG.coefficient_file {C:/Users/jiangyi/Desktop/lab4/I_mem.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jiangyi/Desktop/lab4/I_mem.coe' provided. It will be converted relative to IP Instance files '../../../../I_mem.coe'
+generate_target all [get_files  C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_D'...
+export_ip_user_files -of_objects [get_files C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files -ipstatic_source_dir C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/modelsim} {questa=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/questa} {riviera=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/riviera} {activehdl=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 27 17:08:34 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/synth_1/runme.log
+[Thu Apr 27 17:08:34 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3858.582 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property -dict [list CONFIG.coefficient_file {C:/Users/jiangyi/Desktop/lab4/I_mem.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/jiangyi/Desktop/lab4/I_mem.coe' provided. It will be converted relative to IP Instance files '../../../../I_mem.coe'
+generate_target all [get_files  C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_D'...
+export_ip_user_files -of_objects [get_files C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/jiangyi/Desktop/lab4/lab4.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files -ipstatic_source_dir C:/Users/jiangyi/Desktop/lab4/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/modelsim} {questa=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/questa} {riviera=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/riviera} {activehdl=C:/Users/jiangyi/Desktop/lab4/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 27 17:17:29 2023] Launched synth_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/synth_1/runme.log
+[Thu Apr 27 17:17:29 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/jiangyi/Desktop/lab4/lab4.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3998.070 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 17:37:13 2023...

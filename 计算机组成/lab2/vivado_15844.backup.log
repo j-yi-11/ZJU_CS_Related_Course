@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 30 14:50:43 2023
+# Process ID: 15844
+# Current directory: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12576 C:\Users\jiangyi\Desktop\Lab02 CPU Environment Building\OExp02-IP2SOC\OExp02-IP2SOC.xpr
+# Log file: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/vivado.log
+# Journal file: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/OExp02-IP2SOC.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1191.082 ; gain = 0.000
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU/SCPU.edf}}
+add_files -norecurse {{C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU/SCPU.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/Multi_8CH32.edf} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/Counter_x.edf} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/clk_div.edf} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SAnti_jitter.edf} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SPIO.edf} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/MIO_BUS.edf} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/RAM_B.edf} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/VGA.edf}}
+add_files -norecurse {{C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/Counter_x.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/VGA.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/RAM_B.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SAnti_jitter.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SPIO.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/clk_div.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/MIO_BUS.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/Multi_8CH32.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SSeg7_Dev/SSeg7_Dev.srcs/sources_1/new/MUX2T1_64.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SSeg7_Dev/SSeg7_Dev.srcs/sources_1/new/SSeg_map.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SSeg7_Dev/SSeg7_Dev.srcs/sources_1/new/P2S.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SSeg7_Dev/SSeg7_Dev.srcs/sources_1/new/SSeg7_Dev.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SSeg7_Dev/SSeg7_Dev.srcs/sources_1/new/HexTo8SEG.v} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary/SSeg7_Dev/SSeg7_Dev.srcs/sources_1/new/MC14495_ZJU.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 14:56:10 2023...

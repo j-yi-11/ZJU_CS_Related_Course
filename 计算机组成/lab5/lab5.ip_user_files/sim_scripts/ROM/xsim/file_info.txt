@@ -1,0 +1,2 @@
+ROM.v,verilog,xil_defaultlib,../../../../lab5.gen/sources_1/ip/ROM/sim/ROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

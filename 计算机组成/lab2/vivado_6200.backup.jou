@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 30 09:12:21 2023
+# Process ID: 6200
+# Current directory: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17144 C:\Users\jiangyi\Desktop\Lab02 CPU Environment Building\OExp02-IP2SOC\OExp02-IP2SOC.xpr
+# Log file: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/vivado.log
+# Journal file: C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/OExp02-IP2SOC.xpr}
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {C:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP}} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP}} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {{c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/CPU} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Logic} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/MUX} {c:/Users/jiangyi/Desktop/Lab02 CPU Environment Building/OExp02-IP2SOC/IP/Supplementary}} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild

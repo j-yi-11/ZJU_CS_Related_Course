@@ -1,0 +1,12 @@
+
+{ 
+    crc :  16233721855750508074  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 79a0e152eff54071b2d500b810e8723e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CSSTE_behav xil_defaultlib.CSSTE xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:47:47" , 
+    linkCmd : "D:\\vivado_xilinx\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/CSSTE_behav/xsimk.exe\"   \"xsim.dir/CSSTE_behav/obj/xsim_0.win64.obj\" \"xsim.dir/CSSTE_behav/obj/xsim_1.win64.obj\" -L\"D:\\vivado_xilinx\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
