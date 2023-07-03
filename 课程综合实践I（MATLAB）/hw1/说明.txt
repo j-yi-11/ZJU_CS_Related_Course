@@ -1,0 +1,10 @@
+①打开main.m，单击运行
+②在命令行输入m和n数值
+③再依次在命令行输入
+a
+jytranspose(a)
+findmin(a)
+findmax(a)
+jysort(a)
+可以得到10分的正确结果（结果在截图里面）
+*注：jysort(a)显示结果时候一行只能显示十个数据，数据较多时候分行显示
