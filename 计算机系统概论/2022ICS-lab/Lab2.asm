@@ -20,7 +20,7 @@ GETNUM
     GETC
         AND R5,R5,#0
         ADD R5,R5,#-10
-        ADD R5,R5,R0;   R5  ENTER?
+        ADD R5,R5,R0
         BRz TRAN
         
         ;MULTI
