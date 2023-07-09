@@ -1,1 +1,0 @@
--wto "c86b7772884845eb87c53c6ab15ecba5" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "SignalExt_32_behav" "xil_defaultlib.SignalExt_32" "xil_defaultlib.glbl" -log "elaborate.log" 
