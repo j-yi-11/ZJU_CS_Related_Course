@@ -1,0 +1,2 @@
+MySQL创建数据库，命名为 test
+代码里的 password 设置为 自己的密码
