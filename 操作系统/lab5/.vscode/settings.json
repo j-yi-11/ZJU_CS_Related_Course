@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "getpid.h": "c",
+        "types.h": "c",
+        "mm.h": "c",
+        "defs.h": "c",
+        "stddef.h": "c",
+        "vm.h": "c"
+    }
+}
