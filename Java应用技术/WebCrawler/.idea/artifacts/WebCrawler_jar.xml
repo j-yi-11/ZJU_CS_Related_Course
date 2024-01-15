@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WebCrawler:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebCrawler_jar</output-path>
+    <root id="archive" name="WebCrawler.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resource-package/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="WebCrawler" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/lucene/lucene-highlighter/8.10.1/lucene-highlighter-8.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/pdfbox/fontbox/2.0.28/fontbox-2.0.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/lucene/lucene-queryparser/8.10.1/lucene-queryparser-8.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/8.10.1/lucene-core-8.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/lucene/lucene-memory/8.10.1/lucene-memory-8.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/lucene/lucene-queries/8.10.1/lucene-queries-8.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/lucene/lucene-sandbox/8.10.1/lucene-sandbox-8.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.28/pdfbox-2.0.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.16.2/jsoup-1.16.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/lucene/lucene-analyzers-common/8.10.1/lucene-analyzers-common-8.10.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
