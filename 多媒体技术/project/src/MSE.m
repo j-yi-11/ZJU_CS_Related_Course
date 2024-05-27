@@ -1,0 +1,14 @@
+clc;
+clear;
+src = '6.jpg';
+dst = 'rlc-6.jpg';
+original = imread(src);
+result = imread(dst);
+[row, column, channel] = size(original);
+n = row*column*channel;
+diff = result - original;
+index = find(diff);
+value = diff(index);
+diff_vec = reshape(diff, [], 3)';
+diff_vec_squared = diff_vec.^2;
+fprintf('MSE = %f',sum(diff_vec_squared,"all")/n);
