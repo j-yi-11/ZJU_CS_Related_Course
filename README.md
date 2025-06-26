@@ -1,3 +1,4 @@
+<!--
 # ZJU_CS_Related_Course
 ZJU CS部分课程资源，包括如下：
 
@@ -80,3 +81,4 @@ ZJU CS部分课程资源，包括如下：
 详细见 [数字逻辑设计实验报告](https://github.com/j-yi-11/ZJU-Hardware-Course-Labs)
 ##  计算机体系结构
 详细见 [计算机体系结构实验报告](https://github.com/j-yi-11/ZJU-Hardware-Course-Labs)
+-->
