@@ -1,0 +1,654 @@
+2024-06-08 20:10:36Mymodel(
+  (model): GoogLeNet(
+    (conv1): BasicConv2d(
+      (conv): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (maxpool1): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=True)
+    (conv2): BasicConv2d(
+      (conv): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (conv3): BasicConv2d(
+      (conv): Conv2d(64, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (maxpool2): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=True)
+    (inception3a): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(192, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(96, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(16, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (inception3b): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(128, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(256, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(32, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (maxpool3): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=True)
+    (inception4a): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(480, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(480, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(96, 208, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(208, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(480, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(16, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(16, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(48, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(480, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (inception4b): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(512, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(512, 112, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(112, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(112, 224, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(224, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(512, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(24, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(24, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(512, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (inception4c): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(256, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(512, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(24, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(24, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(512, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (inception4d): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(512, 112, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(112, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(512, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(144, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(144, 288, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(288, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(512, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(512, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (inception4e): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(528, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(256, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(528, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(160, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(320, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(528, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(32, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(528, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (maxpool4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=True)
+    (inception5a): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(832, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(256, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(832, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(160, 320, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(320, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(832, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(32, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(832, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (inception5b): Inception(
+      (branch1): BasicConv2d(
+        (conv): Conv2d(832, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch2): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(832, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): BasicConv2d(
+          (conv): Conv2d(832, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(48, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicConv2d(
+          (conv): Conv2d(48, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch4): Sequential(
+        (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=True)
+        (1): BasicConv2d(
+          (conv): Conv2d(832, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (aux1): None
+    (aux2): None
+    (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+    (dropout): Dropout(p=0.2, inplace=False)
+    (fc): Linear(in_features=1024, out_features=1000, bias=True)
+  )
+)
+Epoch: 1 | train_loss: 2.13 | train_acc: 26.14
+Epoch: 1 | val_loss: 1.66 | val_acc: 36.92
+find best acc 36.92% at 1
+Epoch: 2 | train_loss: 1.58 | train_acc: 41.31
+Epoch: 2 | val_loss: 1.47 | val_acc: 43.85
+find best acc 43.85% at 2
+Epoch: 3 | train_loss: 1.32 | train_acc: 52.62
+Epoch: 3 | val_loss: 1.80 | val_acc: 41.15
+Epoch: 4 | train_loss: 1.15 | train_acc: 59.67
+Epoch: 4 | val_loss: 1.17 | val_acc: 60.26
+find best acc 60.26% at 4
+Epoch: 5 | train_loss: 1.05 | train_acc: 63.28
+Epoch: 5 | val_loss: 1.12 | val_acc: 61.10
+find best acc 61.10% at 5
+Epoch: 6 | train_loss: 0.99 | train_acc: 66.11
+Epoch: 6 | val_loss: 0.99 | val_acc: 66.17
+find best acc 66.17% at 6
+Epoch: 7 | train_loss: 0.95 | train_acc: 67.55
+Epoch: 7 | val_loss: 0.93 | val_acc: 68.06
+find best acc 68.06% at 7
+Epoch: 8 | train_loss: 0.92 | train_acc: 68.89
+Epoch: 8 | val_loss: 0.88 | val_acc: 70.47
+find best acc 70.47% at 8
+Epoch: 9 | train_loss: 0.90 | train_acc: 69.60
+Epoch: 9 | val_loss: 1.11 | val_acc: 64.61
+Epoch: 10 | train_loss: 0.88 | train_acc: 70.34
+Epoch: 10 | val_loss: 1.09 | val_acc: 64.49
+Epoch: 11 | train_loss: 0.86 | train_acc: 70.93
+Epoch: 11 | val_loss: 0.92 | val_acc: 69.37
+Epoch: 12 | train_loss: 0.84 | train_acc: 71.56
+Epoch: 12 | val_loss: 0.95 | val_acc: 68.35
+Epoch: 13 | train_loss: 0.84 | train_acc: 71.93
+Epoch: 13 | val_loss: 0.88 | val_acc: 70.94
+find best acc 70.94% at 13
+Epoch: 14 | train_loss: 0.82 | train_acc: 72.38
+Epoch: 14 | val_loss: 0.85 | val_acc: 71.83
+find best acc 71.83% at 14
+Epoch: 15 | train_loss: 0.81 | train_acc: 72.87
+Epoch: 15 | val_loss: 0.98 | val_acc: 68.01
+Epoch: 16 | train_loss: 0.81 | train_acc: 72.95
+Epoch: 16 | val_loss: 0.87 | val_acc: 71.41
+Epoch: 17 | train_loss: 0.80 | train_acc: 73.14
+Epoch: 17 | val_loss: 0.93 | val_acc: 68.16
+Epoch: 18 | train_loss: 0.77 | train_acc: 74.10
+Epoch: 18 | val_loss: 1.11 | val_acc: 64.71
+Epoch: 19 | train_loss: 0.79 | train_acc: 73.64
+Epoch: 19 | val_loss: 0.88 | val_acc: 71.07
+Epoch: 20 | train_loss: 0.76 | train_acc: 74.15
+Epoch: 20 | val_loss: 0.86 | val_acc: 71.12
+Epoch: 21 | train_loss: 0.76 | train_acc: 74.34
+Epoch: 21 | val_loss: 0.80 | val_acc: 73.67
+find best acc 73.67% at 21
+Epoch: 22 | train_loss: 0.75 | train_acc: 74.84
+Epoch: 22 | val_loss: 1.07 | val_acc: 65.23
+Epoch: 23 | train_loss: 0.75 | train_acc: 75.03
+Epoch: 23 | val_loss: 0.97 | val_acc: 67.77
+Epoch: 24 | train_loss: 0.74 | train_acc: 75.15
+Epoch: 24 | val_loss: 1.13 | val_acc: 64.98
+Epoch: 25 | train_loss: 0.73 | train_acc: 75.18
+Epoch: 25 | val_loss: 0.87 | val_acc: 70.58
+Epoch: 26 | train_loss: 0.73 | train_acc: 75.62
+Epoch: 26 | val_loss: 0.89 | val_acc: 69.89
+Epoch: 27 | train_loss: 0.73 | train_acc: 75.57
+Epoch: 27 | val_loss: 0.95 | val_acc: 69.42
+Epoch: 28 | train_loss: 0.72 | train_acc: 76.14
+Epoch: 28 | val_loss: 0.77 | val_acc: 74.74
+find best acc 74.74% at 28
+Epoch: 29 | train_loss: 0.71 | train_acc: 76.32
+Epoch: 29 | val_loss: 0.76 | val_acc: 74.82
+find best acc 74.82% at 29
+Epoch: 30 | train_loss: 0.71 | train_acc: 76.21
+Epoch: 30 | val_loss: 0.96 | val_acc: 67.08
+Epoch: 31 | train_loss: 0.70 | train_acc: 76.74
+Epoch: 31 | val_loss: 0.87 | val_acc: 71.46
+Epoch: 32 | train_loss: 0.69 | train_acc: 76.91
+Epoch: 32 | val_loss: 0.76 | val_acc: 74.95
+find best acc 74.95% at 32
+Epoch: 33 | train_loss: 0.68 | train_acc: 76.99
+Epoch: 33 | val_loss: 1.02 | val_acc: 68.45
+Epoch: 34 | train_loss: 0.69 | train_acc: 77.18
+Epoch: 34 | val_loss: 0.81 | val_acc: 73.47
+Epoch: 35 | train_loss: 0.67 | train_acc: 77.46
+Epoch: 35 | val_loss: 0.82 | val_acc: 73.11
+Epoch: 36 | train_loss: 0.68 | train_acc: 77.26
+Epoch: 36 | val_loss: 0.82 | val_acc: 71.99
+Epoch: 37 | train_loss: 0.67 | train_acc: 77.42
+Epoch: 37 | val_loss: 0.80 | val_acc: 73.05
+Epoch: 38 | train_loss: 0.66 | train_acc: 77.80
+Epoch: 38 | val_loss: 0.82 | val_acc: 72.82
+Epoch: 39 | train_loss: 0.65 | train_acc: 78.09
+Epoch: 39 | val_loss: 1.21 | val_acc: 62.51
+Epoch: 40 | train_loss: 0.65 | train_acc: 78.40
+Epoch: 40 | val_loss: 0.80 | val_acc: 74.11
+Epoch: 41 | train_loss: 0.64 | train_acc: 78.53
+Epoch: 41 | val_loss: 0.83 | val_acc: 72.20
+Epoch: 42 | train_loss: 0.63 | train_acc: 78.68
+Epoch: 42 | val_loss: 0.78 | val_acc: 74.90
+Epoch: 43 | train_loss: 0.63 | train_acc: 78.97
+Epoch: 43 | val_loss: 0.75 | val_acc: 75.24
+find best acc 75.24% at 43
+Epoch: 44 | train_loss: 0.62 | train_acc: 79.10
+Epoch: 44 | val_loss: 0.73 | val_acc: 75.04
+Epoch: 45 | train_loss: 0.60 | train_acc: 79.68
+Epoch: 45 | val_loss: 0.75 | val_acc: 75.06
+Epoch: 46 | train_loss: 0.61 | train_acc: 79.51
+Epoch: 46 | val_loss: 0.76 | val_acc: 75.22
+Epoch: 47 | train_loss: 0.60 | train_acc: 80.04
+Epoch: 47 | val_loss: 0.76 | val_acc: 73.88
+Epoch: 48 | train_loss: 0.58 | train_acc: 80.43
+Epoch: 48 | val_loss: 0.64 | val_acc: 78.89
+find best acc 78.89% at 48
+Epoch: 49 | train_loss: 0.59 | train_acc: 80.34
+Epoch: 49 | val_loss: 0.86 | val_acc: 71.71
+Epoch: 50 | train_loss: 0.58 | train_acc: 80.64
+Epoch: 50 | val_loss: 0.62 | val_acc: 79.56
+find best acc 79.56% at 50
+Epoch: 51 | train_loss: 0.57 | train_acc: 80.78
+Epoch: 51 | val_loss: 0.76 | val_acc: 75.14
+Epoch: 52 | train_loss: 0.56 | train_acc: 81.25
+Epoch: 52 | val_loss: 0.59 | val_acc: 80.13
+find best acc 80.13% at 52
+Epoch: 53 | train_loss: 0.56 | train_acc: 81.36
+Epoch: 53 | val_loss: 0.63 | val_acc: 78.79
+Epoch: 54 | train_loss: 0.54 | train_acc: 81.85
+Epoch: 54 | val_loss: 0.68 | val_acc: 77.74
+Epoch: 55 | train_loss: 0.54 | train_acc: 81.61
+Epoch: 55 | val_loss: 0.63 | val_acc: 78.88
+Epoch: 56 | train_loss: 0.53 | train_acc: 82.06
+Epoch: 56 | val_loss: 0.61 | val_acc: 79.38
+Epoch: 57 | train_loss: 0.52 | train_acc: 82.42
+Epoch: 57 | val_loss: 0.63 | val_acc: 79.55
+Epoch: 58 | train_loss: 0.51 | train_acc: 82.54
+Epoch: 58 | val_loss: 0.65 | val_acc: 78.39
+Epoch: 59 | train_loss: 0.50 | train_acc: 82.90
+Epoch: 59 | val_loss: 0.61 | val_acc: 79.95
+Epoch: 60 | train_loss: 0.50 | train_acc: 83.10
+Epoch: 60 | val_loss: 0.67 | val_acc: 78.01
+Epoch: 61 | train_loss: 0.48 | train_acc: 83.53
+Epoch: 61 | val_loss: 0.68 | val_acc: 77.85
+Epoch: 62 | train_loss: 0.48 | train_acc: 83.94
+Epoch: 62 | val_loss: 0.64 | val_acc: 79.44
+Epoch: 63 | train_loss: 0.46 | train_acc: 84.09
+Epoch: 63 | val_loss: 0.61 | val_acc: 79.91
+Epoch: 64 | train_loss: 0.46 | train_acc: 84.53
+Epoch: 64 | val_loss: 0.60 | val_acc: 79.46
+Epoch: 65 | train_loss: 0.45 | train_acc: 84.80
+Epoch: 65 | val_loss: 0.58 | val_acc: 80.54
+find best acc 80.54% at 65
+Epoch: 66 | train_loss: 0.43 | train_acc: 85.29
+Epoch: 66 | val_loss: 0.58 | val_acc: 80.71
+find best acc 80.71% at 66
+Epoch: 67 | train_loss: 0.43 | train_acc: 85.47
+Epoch: 67 | val_loss: 0.52 | val_acc: 82.88
+find best acc 82.88% at 67
+Epoch: 68 | train_loss: 0.42 | train_acc: 85.75
+Epoch: 68 | val_loss: 0.57 | val_acc: 81.18
+Epoch: 69 | train_loss: 0.41 | train_acc: 86.14
+Epoch: 69 | val_loss: 0.54 | val_acc: 81.69
+Epoch: 70 | train_loss: 0.39 | train_acc: 86.73
+Epoch: 70 | val_loss: 0.55 | val_acc: 82.28
+Epoch: 71 | train_loss: 0.38 | train_acc: 86.93
+Epoch: 71 | val_loss: 0.56 | val_acc: 81.72
+Epoch: 72 | train_loss: 0.36 | train_acc: 87.63
+Epoch: 72 | val_loss: 0.53 | val_acc: 82.35
+Epoch: 73 | train_loss: 0.36 | train_acc: 87.76
+Epoch: 73 | val_loss: 0.59 | val_acc: 80.74
+Epoch: 74 | train_loss: 0.35 | train_acc: 88.04
+Epoch: 74 | val_loss: 0.48 | val_acc: 84.50
+find best acc 84.50% at 74
+Epoch: 75 | train_loss: 0.33 | train_acc: 88.91
+Epoch: 75 | val_loss: 0.47 | val_acc: 84.73
+find best acc 84.73% at 75
+Epoch: 76 | train_loss: 0.32 | train_acc: 89.07
+Epoch: 76 | val_loss: 0.46 | val_acc: 84.96
+find best acc 84.96% at 76
+Epoch: 77 | train_loss: 0.31 | train_acc: 89.21
+Epoch: 77 | val_loss: 0.46 | val_acc: 84.61
+Epoch: 78 | train_loss: 0.30 | train_acc: 89.70
+Epoch: 78 | val_loss: 0.47 | val_acc: 83.79
+Epoch: 79 | train_loss: 0.28 | train_acc: 90.37
+Epoch: 79 | val_loss: 0.45 | val_acc: 85.44
+find best acc 85.44% at 79
+Epoch: 80 | train_loss: 0.27 | train_acc: 90.65
+Epoch: 80 | val_loss: 0.46 | val_acc: 85.24
+Epoch: 81 | train_loss: 0.26 | train_acc: 91.12
+Epoch: 81 | val_loss: 0.43 | val_acc: 86.20
+find best acc 86.20% at 81
+Epoch: 82 | train_loss: 0.24 | train_acc: 91.57
+Epoch: 82 | val_loss: 0.46 | val_acc: 85.13
+Epoch: 83 | train_loss: 0.23 | train_acc: 92.30
+Epoch: 83 | val_loss: 0.45 | val_acc: 85.37
+Epoch: 84 | train_loss: 0.22 | train_acc: 92.50
+Epoch: 84 | val_loss: 0.43 | val_acc: 86.50
+find best acc 86.50% at 84
+Epoch: 85 | train_loss: 0.20 | train_acc: 93.19
+Epoch: 85 | val_loss: 0.43 | val_acc: 86.40
+Epoch: 86 | train_loss: 0.19 | train_acc: 93.63
+Epoch: 86 | val_loss: 0.43 | val_acc: 86.76
+find best acc 86.76% at 86
+Epoch: 87 | train_loss: 0.17 | train_acc: 94.20
+Epoch: 87 | val_loss: 0.42 | val_acc: 87.05
+find best acc 87.05% at 87
+Epoch: 88 | train_loss: 0.16 | train_acc: 94.56
+Epoch: 88 | val_loss: 0.40 | val_acc: 87.53
+find best acc 87.53% at 88
+Epoch: 89 | train_loss: 0.14 | train_acc: 95.18
+Epoch: 89 | val_loss: 0.43 | val_acc: 87.00
+Epoch: 90 | train_loss: 0.13 | train_acc: 95.59
+Epoch: 90 | val_loss: 0.41 | val_acc: 88.10
+find best acc 88.10% at 90
+Epoch: 91 | train_loss: 0.12 | train_acc: 95.83
+Epoch: 91 | val_loss: 0.41 | val_acc: 87.73
+Epoch: 92 | train_loss: 0.11 | train_acc: 96.37
+Epoch: 92 | val_loss: 0.41 | val_acc: 87.90
+Epoch: 93 | train_loss: 0.10 | train_acc: 96.60
+Epoch: 93 | val_loss: 0.41 | val_acc: 88.04
+Epoch: 94 | train_loss: 0.09 | train_acc: 96.92
+Epoch: 94 | val_loss: 0.42 | val_acc: 87.95
+Epoch: 95 | train_loss: 0.09 | train_acc: 97.03
+Epoch: 95 | val_loss: 0.41 | val_acc: 88.29
+find best acc 88.29% at 95
+Epoch: 96 | train_loss: 0.09 | train_acc: 97.06
+Epoch: 96 | val_loss: 0.42 | val_acc: 88.15
+Epoch: 97 | train_loss: 0.08 | train_acc: 97.42
+Epoch: 97 | val_loss: 0.41 | val_acc: 88.21
+Epoch: 98 | train_loss: 0.08 | train_acc: 97.58
+Epoch: 98 | val_loss: 0.41 | val_acc: 88.28
+Epoch: 99 | train_loss: 0.08 | train_acc: 97.63
+Epoch: 99 | val_loss: 0.41 | val_acc: 88.53
+find best acc 88.53% at 99
+Epoch: 100 | train_loss: 0.07 | train_acc: 97.59
+Epoch: 100 | val_loss: 0.41 | val_acc: 88.41
+Epoch: 101 | train_loss: 0.07 | train_acc: 97.61
+Epoch: 101 | val_loss: 0.41 | val_acc: 88.39
+Epoch: 102 | train_loss: 0.07 | train_acc: 97.58
+Epoch: 102 | val_loss: 0.41 | val_acc: 88.45
+Epoch: 103 | train_loss: 0.07 | train_acc: 97.65
+Epoch: 103 | val_loss: 0.41 | val_acc: 88.53
+Epoch: 104 | train_loss: 0.07 | train_acc: 97.58
+Epoch: 104 | val_loss: 0.41 | val_acc: 88.43
+Epoch: 105 | train_loss: 0.07 | train_acc: 97.57
+Epoch: 105 | val_loss: 0.41 | val_acc: 88.38
+Epoch: 106 | train_loss: 0.08 | train_acc: 97.52
+Epoch: 106 | val_loss: 0.42 | val_acc: 88.38
+Epoch: 107 | train_loss: 0.08 | train_acc: 97.48
+Epoch: 107 | val_loss: 0.42 | val_acc: 88.36
+Epoch: 108 | train_loss: 0.08 | train_acc: 97.40
+Epoch: 108 | val_loss: 0.43 | val_acc: 88.15
+Epoch: 109 | train_loss: 0.08 | train_acc: 97.21
+Epoch: 109 | val_loss: 0.43 | val_acc: 87.79
+Epoch: 110 | train_loss: 0.09 | train_acc: 96.79
+Epoch: 110 | val_loss: 0.45 | val_acc: 87.59
+Epoch: 111 | train_loss: 0.10 | train_acc: 96.60
+Epoch: 111 | val_loss: 0.45 | val_acc: 87.28
+Epoch: 112 | train_loss: 0.11 | train_acc: 96.23
+Epoch: 112 | val_loss: 0.45 | val_acc: 87.06
+Epoch: 113 | train_loss: 0.13 | train_acc: 95.66
+Epoch: 113 | val_loss: 0.47 | val_acc: 86.83
+Epoch: 114 | train_loss: 0.14 | train_acc: 95.08
+Epoch: 114 | val_loss: 0.46 | val_acc: 86.75
+Epoch: 115 | train_loss: 0.16 | train_acc: 94.61
+Epoch: 115 | val_loss: 0.48 | val_acc: 85.95
+Epoch: 116 | train_loss: 0.18 | train_acc: 93.53
+Epoch: 116 | val_loss: 0.47 | val_acc: 85.81
+Epoch: 117 | train_loss: 0.20 | train_acc: 93.19
+Epoch: 117 | val_loss: 0.52 | val_acc: 84.44
+Epoch: 118 | train_loss: 0.22 | train_acc: 92.33
+Epoch: 118 | val_loss: 0.47 | val_acc: 85.80
+Epoch: 119 | train_loss: 0.23 | train_acc: 92.00
+Epoch: 119 | val_loss: 0.52 | val_acc: 84.42
+Epoch: 120 | train_loss: 0.26 | train_acc: 91.17
+Epoch: 120 | val_loss: 0.54 | val_acc: 83.32
+Epoch: 121 | train_loss: 0.27 | train_acc: 90.57
+Epoch: 121 | val_loss: 0.50 | val_acc: 84.54
+Epoch: 122 | train_loss: 0.29 | train_acc: 90.14
+Epoch: 122 | val_loss: 0.53 | val_acc: 83.21
+Epoch: 123 | train_loss: 0.30 | train_acc: 89.44
+Epoch: 123 | val_loss: 0.51 | val_acc: 83.12
+Epoch: 124 | train_loss: 0.32 | train_acc: 88.94
+Epoch: 124 | val_loss: 0.49 | val_acc: 83.96
+Epoch: 125 | train_loss: 0.33 | train_acc: 88.62
+Epoch: 125 | val_loss: 0.52 | val_acc: 83.26
+Epoch: 126 | train_loss: 0.34 | train_acc: 88.19
+Epoch: 126 | val_loss: 0.50 | val_acc: 83.69
+Epoch: 127 | train_loss: 0.36 | train_acc: 87.72
+Epoch: 127 | val_loss: 0.53 | val_acc: 83.09
+Epoch: 128 | train_loss: 0.36 | train_acc: 87.72
+Epoch: 128 | val_loss: 0.52 | val_acc: 82.50
+Epoch: 129 | train_loss: 0.37 | train_acc: 87.14
+Epoch: 129 | val_loss: 0.56 | val_acc: 81.78
+Epoch: 130 | train_loss: 0.38 | train_acc: 87.08
+Epoch: 130 | val_loss: 0.54 | val_acc: 82.46
+Epoch: 131 | train_loss: 0.38 | train_acc: 87.10
+Epoch: 131 | val_loss: 0.55 | val_acc: 81.72
+Epoch: 132 | train_loss: 0.40 | train_acc: 86.56
+Epoch: 132 | val_loss: 0.50 | val_acc: 82.77
+Epoch: 133 | train_loss: 0.41 | train_acc: 86.10
+Epoch: 133 | val_loss: 0.54 | val_acc: 81.94
+Epoch: 134 | train_loss: 0.41 | train_acc: 85.84
+Epoch: 134 | val_loss: 0.50 | val_acc: 83.08
+Epoch: 135 | train_loss: 0.42 | train_acc: 85.64
+Epoch: 135 | val_loss: 0.62 | val_acc: 80.22
+Epoch: 136 | train_loss: 0.43 | train_acc: 85.52
+Epoch: 136 | val_loss: 0.58 | val_acc: 80.63
+Epoch: 137 | train_loss: 0.43 | train_acc: 85.36
+Epoch: 137 | val_loss: 0.59 | val_acc: 80.80
+Epoch: 138 | train_loss: 0.44 | train_acc: 85.12
+Epoch: 138 | val_loss: 0.70 | val_acc: 77.56
+Epoch: 139 | train_loss: 0.45 | train_acc: 84.71
+Epoch: 139 | val_loss: 0.58 | val_acc: 80.95
+Epoch: 140 | train_loss: 0.46 | train_acc: 84.39
+Epoch: 140 | val_loss: 0.58 | val_acc: 80.55
+Epoch: 141 | train_loss: 0.46 | train_acc: 84.04
+Epoch: 141 | val_loss: 0.67 | val_acc: 77.55
+Epoch: 142 | train_loss: 0.47 | train_acc: 84.36
+Epoch: 142 | val_loss: 0.66 | val_acc: 77.55
+Epoch: 143 | train_loss: 0.48 | train_acc: 83.84
+Epoch: 143 | val_loss: 0.60 | val_acc: 80.05
+Epoch: 144 | train_loss: 0.48 | train_acc: 83.65
+Epoch: 144 | val_loss: 0.70 | val_acc: 77.27
+Epoch: 145 | train_loss: 0.50 | train_acc: 83.12
+Epoch: 145 | val_loss: 0.64 | val_acc: 79.00
+Epoch: 146 | train_loss: 0.50 | train_acc: 82.94
+Epoch: 146 | val_loss: 0.72 | val_acc: 76.08
+Epoch: 147 | train_loss: 0.50 | train_acc: 83.03
+Epoch: 147 | val_loss: 0.59 | val_acc: 80.82
+Epoch: 148 | train_loss: 0.50 | train_acc: 83.13
+Epoch: 148 | val_loss: 0.69 | val_acc: 77.06
+Epoch: 149 | train_loss: 0.52 | train_acc: 82.43
+Epoch: 149 | val_loss: 0.70 | val_acc: 77.49
+Epoch: 150 | train_loss: 0.52 | train_acc: 82.55
+Epoch: 150 | val_loss: 0.68 | val_acc: 77.95

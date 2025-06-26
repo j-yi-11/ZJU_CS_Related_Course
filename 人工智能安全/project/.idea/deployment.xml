@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="oppo2@10.76.0.98:222 password" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="oppo2@10.76.0.98:222 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/oppo2/ais" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
